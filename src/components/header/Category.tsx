@@ -1,14 +1,21 @@
-interface IProps {
-  title: string;
+import newLogo from "../../assets/new_category.jpg";
+import type { CategoryType } from "../../types";
 
-  logo: string;
+interface IProps {
+  category: CategoryType;
 }
 
-const Category = ({ title, logo }: IProps) => {
+const Category = ({ category }: IProps) => {
+  const isNewGategory = () => {
+    if (category.new) return <img src={newLogo}></img>;
+    else return <></>;
+  };
+
   return (
     <div>
-      <img src={logo}></img>
-      <p>{title}</p>
+      <img src={category.logo}></img>
+      <p>{category.title}</p>
+      {isNewGategory()}
     </div>
   );
 };

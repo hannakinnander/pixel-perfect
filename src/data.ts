@@ -31,15 +31,18 @@ export const categories: CategoryType[] = [
     id: "1",
     title: "Boenden",
     logo: houseLogo,
+    new: false,
   },
   {
     id: "2",
     title: "Upplevelser",
     logo: balloonLogo,
+    new: true,
   },
   {
     id: "3",
     title: "Tjänster",
     logo: bellLogo,
+    new: true,
   },
 ];
