@@ -5,10 +5,11 @@ import Category from "./Category";
 import { IconBtn } from "./IconBtn";
 import { CiGlobe } from "react-icons/ci";
 import { FiMenu } from "react-icons/fi";
+import SearchBar from "./search-bar/SearchBar";
 
 export const Header = () => {
   return (
-    <header>
+    <header className="bg-gray-100 flex">
       <div>
         <img src={logo} alt="logo" />
         <div>
@@ -24,6 +25,7 @@ export const Header = () => {
           <IconBtn>
             <FiMenu />
           </IconBtn>
+          <SearchBar />
         </div>
       </div>
     </header>

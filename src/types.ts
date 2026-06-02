@@ -4,3 +4,9 @@ export type CategoryType = {
   logo: string;
   new: boolean;
 };
+
+export interface ISearchValue {
+  id: string;
+  title: string;
+  placeholder: string;
+}

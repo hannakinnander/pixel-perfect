@@ -1,7 +1,7 @@
 import houseLogo from "./assets/house_logo.jpg";
 import balloonLogo from "./assets/balloon_logo.jpg";
 import bellLogo from "./assets/bell_logo.jpg";
-import type { CategoryType } from "./types";
+import type { CategoryType, ISearchValue } from "./types";
 
 export const rooms = [
   {
@@ -45,4 +45,10 @@ export const categories: CategoryType[] = [
     logo: bellLogo,
     new: true,
   },
+];
+
+export const searchValues: ISearchValue[] = [
+  { id: "1", title: "Var", placeholder: "Sök destinationer" },
+  { id: "2", title: "När", placeholder: "Lägg till datum" },
+  { id: "3", title: "Vem", placeholder: "Lägg till gäster" },
 ];
