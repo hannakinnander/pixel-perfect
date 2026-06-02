@@ -2,7 +2,7 @@ import logo from "../../assets/airbnb_logo.jpg";
 import { categories } from "../../data";
 import type { ICategory } from "../../types";
 import Category from "./Category";
-import { IconBtn } from "./IconBtn";
+import { IconBtn } from "../IconBtn";
 import { CiGlobe } from "react-icons/ci";
 import { FiMenu } from "react-icons/fi";
 import SearchBar from "./search-bar/SearchBar";

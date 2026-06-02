@@ -13,19 +13,22 @@ export interface ISearchValue {
 
 export interface IRoom {
   id: string;
+  type: "room";
   title: string;
-  location: string;
   date: string;
   host: string;
   price: string;
   rating: string;
   img: string;
+  favorite: boolean;
 }
 
 export interface IHotel {
   id: string;
-  hotelName: string;
+  type: "hotel";
+  title: string;
   price: string;
   rating: string;
   img: string;
+  favorite: boolean;
 }
