@@ -10,7 +10,7 @@ const Card = ({ item }: IProps) => {
   const isFavorite = () => {
     if (item.favorite)
       return (
-        <div className="absolute top-3 left-3 rounded-full bg-taupe-100  pl-3 pr-3 p-[2px] text-[13px] font-bold text-zinc-600">
+        <div className="absolute top-3 left-3 rounded-full bg-taupe-100  pl-3 pr-3 p-0.5 text-[13px] font-bold text-zinc-600">
           Gästfavorit
         </div>
       );
