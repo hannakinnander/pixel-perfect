@@ -19,7 +19,7 @@ const Card = ({ item }: IProps) => {
         </p>
       );
   };
-  console.log(item.img);
+
   return (
     <div className="flex-1">
       <div

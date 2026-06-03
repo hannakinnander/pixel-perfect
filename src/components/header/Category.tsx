@@ -8,18 +8,25 @@ interface IProps {
 const Category = ({ category }: IProps) => {
   const isNewGategory = () => {
     if (category.new)
-      return <img src={newLogo} className=" w-10 absolute top-0 left-10"></img>;
+      return (
+        <img
+          src={newLogo}
+          className="absolute -top-1 left-9 group-hover:scale-110"
+        ></img>
+      );
     else return <></>;
   };
 
   return (
-    <div className="relative flex items-center gap-2 h-15 ">
-      <img src={category.logo} className=""></img>
-      <p className="text-base font-semibold text-neutral-500">
+    <div className="group relative flex items-center gap-2 w-30  h-15 cursor-pointer">
+      <div className="  h-fit">
+        <img src={category.logo} className="group-hover:scale-110" />
+        {isNewGategory()}
+      </div>
+
+      <p className=" t-auto b-auto l-auto r-auto text-base font-semibold text-neutral-500 z-1000">
         {category.title}
       </p>
-      {isNewGategory()}
-      <div className="h-1 bg-black w-full" />
     </div>
   );
 };
