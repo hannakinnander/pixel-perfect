@@ -9,10 +9,10 @@ import SearchBar from "./search-bar/SearchBar";
 
 export const Header = () => {
   return (
-    <header className="w-full bg-gray-100 flex flex-col items-center gap-10 p-7 border-b-3 border-gray-300">
-      <div className="w-full flex justify-between ">
-        <img src={logo} alt="logo" />
-        <div className="flex gap-4">
+    <header className="w-full pl-12 pr-12 pt-4 pb-7 bg-zinc-50 flex flex-col items-center gap-5  border-b-3 border-gray-200">
+      <div className="w-full flex justify-between items-center ">
+        <img src={logo} alt="logo" className="h-fit w-27" />
+        <div className="flex gap-8">
           {categories.map((category: ICategory) => (
             <Category key={category.id} category={category} />
           ))}

@@ -4,7 +4,7 @@ import { FiSearch } from "react-icons/fi";
 
 const SearchBar = () => {
   return (
-    <div className=" flex bg-white p-4 w-fit rounded-full relative ">
+    <div className="relative flex items-center bg-white p-2 w-fit rounded-full border-2 border-gray-200 shadow-lg">
       {searchValues.map((searchValue) => (
         <SearchItem key={searchValue.id} searchValue={searchValue} />
       ))}

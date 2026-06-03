@@ -21,13 +21,13 @@ const Card = ({ item }: IProps) => {
   };
   console.log(item.img);
   return (
-    <div>
+    <div className="flex-1">
       <div
         style={{
           backgroundImage: `url(${item.img})`,
           backgroundSize: "cover",
         }}
-        className="h-70 w-70 rounded-4xl"
+        className="rounded-4xl aspect-square "
       >
         {isFavorite()}
         <PiHeartStraightDuotone />

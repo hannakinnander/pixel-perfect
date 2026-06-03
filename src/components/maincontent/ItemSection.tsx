@@ -8,7 +8,7 @@ interface IProps {
 }
 const ItemSection = ({ text, items }: IProps) => {
   return (
-    <div className="w-fit">
+    <div className="w-full">
       <CategoryHeading text={text} />
       <div className="flex gap-7">
         {items.map((item) => (

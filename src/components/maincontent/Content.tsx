@@ -3,7 +3,7 @@ import { rooms, hotels } from "../../data";
 
 const Content = () => {
   return (
-    <div className="p-10 flex flex-col items-center">
+    <div className="p-10 flex flex-col items-center gap-7">
       <ItemSection text="Populära boenden i Göteborg" items={rooms} />
       <ItemSection
         text="Fantastiska hotell för din nästa resa"
