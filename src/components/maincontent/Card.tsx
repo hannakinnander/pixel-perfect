@@ -20,7 +20,7 @@ const Card = ({ item }: IProps) => {
   const showInfo = () => {
     if (item.type === "room")
       return (
-        <p className="text-[12px]  text-zinc-500">
+        <p className="text-[13px]  text-zinc-500">
           {item.date} • {item.host}
         </p>
       );
@@ -37,13 +37,13 @@ const Card = ({ item }: IProps) => {
         className="rounded-3xl aspect-15/14 "
       >
         {isFavorite()}
-        <IoIosHeart className="absolute top-3 right-3 size-7 opacity-60" />
-        <IoIosHeartEmpty className="absolute top-3 right-3 size-7 text-white " />
+        <IoIosHeart className="absolute top-3 right-3 size-7 opacity-60 " />
+        <IoIosHeartEmpty className="absolute top-3 right-3 size-7 text-white cursor-pointer hover:scale-110" />
       </div>
       <div className="p-1">
         <p className="text-sm font-semibold">{item.title}</p>
         {showInfo()}
-        <p className="text-[12px] text-zinc-500">
+        <p className="text-[13px]/3 text-zinc-500">
           {item.price}
           <span> • ★ </span>
           {item.rating}{" "}
