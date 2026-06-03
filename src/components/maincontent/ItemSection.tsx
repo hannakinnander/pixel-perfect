@@ -1,6 +1,6 @@
 import type { IHotel, IRoom } from "../../types";
 import Card from "./Card";
-import CategoryHeading from "./CategoryHeading";
+import SectionHeading from "./SectionHeading";
 
 interface IProps {
   text: string;
@@ -8,9 +8,9 @@ interface IProps {
 }
 const ItemSection = ({ text, items }: IProps) => {
   return (
-    <div className="w-full">
-      <CategoryHeading text={text} />
-      <div className="flex gap-7">
+    <div className="w-full flex flex-col gap-3">
+      <SectionHeading text={text} />
+      <div className="flex gap-3">
         {items.map((item) => (
           <Card key={item.id} item={item} />
         ))}

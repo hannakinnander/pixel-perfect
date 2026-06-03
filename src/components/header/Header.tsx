@@ -14,7 +14,7 @@ interface IProps {
 
 export const Header = ({ changeCategory, currentCategory }: IProps) => {
   return (
-    <header className="w-full pl-10 pr-12 pt-5 pb-7 bg-zinc-50 flex flex-col items-center gap-6 border-b-3 border-gray-200">
+    <header className="w-full pl-10 pr-12 pt-5 pb-7 bg-neutral-50 flex flex-col items-center gap-6 border-b-3 border-gray-200">
       <div className="w-full flex justify-between items-center ">
         <img src={logo} alt="logo" className="h-fit w-27 cursor-pointer" />
         <div className="flex gap-8 ml-30">
@@ -38,10 +38,10 @@ export const Header = ({ changeCategory, currentCategory }: IProps) => {
           >
             Bli en värd
           </a>
-          <IconBtn>
+          <IconBtn padding="3">
             <FiGlobe className="size-4.5" />
           </IconBtn>
-          <IconBtn>
+          <IconBtn padding="3">
             <FiMenu className="size-4.5" />
           </IconBtn>
         </div>

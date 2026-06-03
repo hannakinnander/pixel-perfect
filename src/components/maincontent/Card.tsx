@@ -27,7 +27,7 @@ const Card = ({ item }: IProps) => {
           backgroundImage: `url(${item.img})`,
           backgroundSize: "cover",
         }}
-        className="rounded-4xl aspect-square "
+        className="rounded-3xl aspect-square "
       >
         {isFavorite()}
         <PiHeartStraightDuotone />

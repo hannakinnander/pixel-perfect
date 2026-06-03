@@ -1,11 +1,12 @@
 import type { PropsWithChildren } from "react";
 
-export const IconBtn = ({ children }: PropsWithChildren) => {
+interface IProps {
+  padding: string;
+}
+export const IconBtn = ({ padding, children }: PropsWithChildren<IProps>) => {
   return (
     <div
-      className={
-        "p-3 bg-zinc-200 rounded-full cursor-pointer hover:bg-zinc-300"
-      }
+      className={`p-${padding} bg-zinc-100 rounded-full cursor-pointer hover:bg-zinc-200`}
     >
       {children}
     </div>
