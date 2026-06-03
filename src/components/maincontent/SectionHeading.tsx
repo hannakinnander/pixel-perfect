@@ -8,7 +8,7 @@ interface IProps {
 }
 const SectionHeading = ({ text }: IProps) => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between w-full">
       <div className="flex gap-2">
         <h2 className="text-[22px] font-semibold">{text}</h2>
         <a
