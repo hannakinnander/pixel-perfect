@@ -1,5 +1,6 @@
 import type { IRoom, IHotel } from "../../types";
-import { PiHeartStraightDuotone } from "react-icons/pi";
+import { IoIosHeart } from "react-icons/io";
+import { IoIosHeartEmpty } from "react-icons/io";
 
 interface IProps {
   item: IHotel | IRoom;
@@ -7,7 +8,12 @@ interface IProps {
 
 const Card = ({ item }: IProps) => {
   const isFavorite = () => {
-    if (item.favorite) return <div>Gästfavorit</div>;
+    if (item.favorite)
+      return (
+        <div className="absolute top-3 left-3 rounded-full bg-white/90  pl-3 pr-3 p-[2px] text-[13px] font-semibold">
+          Gästfavorit
+        </div>
+      );
     else return <></>;
   };
 
@@ -21,16 +27,18 @@ const Card = ({ item }: IProps) => {
   };
 
   return (
-    <div className="flex-1">
+    <div className="flex-1 relative">
       <div
         style={{
           backgroundImage: `url(${item.img})`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
-        className="rounded-3xl aspect-square "
+        className="rounded-3xl aspect-15/14 "
       >
         {isFavorite()}
-        <PiHeartStraightDuotone />
+        <IoIosHeart className="absolute top-3 right-3 size-7 opacity-60" />
+        <IoIosHeartEmpty className="absolute top-3 right-3 size-7 text-white " />
       </div>
       <div>
         <p>{item.title}</p>
