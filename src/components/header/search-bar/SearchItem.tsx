@@ -6,9 +6,9 @@ interface IProps {
 
 export const SearchItem = ({ searchValue }: IProps) => {
   return (
-    <div className="w-65 pl-7 rounded-full">
+    <div className="mr-15">
       <p className="text-sm font-semibold text-gray-600">{searchValue.title}</p>
-      <input type="text" placeholder={searchValue.placeholder} />
+      <input type="text" placeholder={searchValue.placeholder} className="" />
     </div>
   );
 };

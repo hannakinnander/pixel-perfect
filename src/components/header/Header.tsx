@@ -6,6 +6,7 @@ import { IconBtn } from "../IconBtn";
 import { CiGlobe } from "react-icons/ci";
 import { FiMenu } from "react-icons/fi";
 import SearchBar from "./search-bar/SearchBar";
+import { FiGlobe } from "react-icons/fi";
 
 export const Header = () => {
   return (
@@ -17,13 +18,15 @@ export const Header = () => {
             <Category key={category.id} category={category} />
           ))}
         </div>
-        <div className="flex items-center gap-4">
-          <a href="#">Bli en värd</a>
+        <div className="flex items-center gap-3">
+          <a href="#" className="font-semibold">
+            Bli en värd
+          </a>
           <IconBtn>
-            <CiGlobe />
+            <FiGlobe className="size-4.5" />
           </IconBtn>
           <IconBtn>
-            <FiMenu />
+            <FiMenu className="size-4.5" />
           </IconBtn>
         </div>
       </div>
