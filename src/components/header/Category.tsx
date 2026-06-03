@@ -13,12 +13,13 @@ const Category = ({ category }: IProps) => {
   };
 
   return (
-    <div className="relative flex items-center gap-2 h-15">
+    <div className="relative flex items-center gap-2 h-15 ">
       <img src={category.logo} className=""></img>
       <p className="text-base font-semibold text-neutral-500">
         {category.title}
       </p>
       {isNewGategory()}
+      <div className="h-1 bg-black w-full" />
     </div>
   );
 };
