@@ -11,20 +11,20 @@ const Category = ({ category }: IProps) => {
       return (
         <img
           src={newLogo}
-          className="absolute -top-0 left-8 w-9 group-hover:scale-110"
+          className="absolute top-0 left-8 w-9 group-hover:scale-110"
         ></img>
       );
     else return <></>;
   };
 
   return (
-    <div className="group relative flex items-center gap-3 w-30 h-13 cursor-pointer">
+    <div className="group relative flex items-center gap-2 w-30 h-13 cursor-pointer">
       <div className="  h-fit">
         <img src={category.logo} className="group-hover:scale-110" />
         {isNewGategory()}
       </div>
 
-      <p className=" t-auto b-auto l-auto r-auto text-base font-semibold  z-1000">
+      <p className=" t-auto b-auto l-auto r-auto text-[0.95em] font-semibold">
         {category.title}
       </p>
     </div>

@@ -3,6 +3,13 @@
 * {
   box-sizing: border-box;
   letter-spacing: -0.02em;
-  font-stretch: expanded;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@theme {
+  --color-search-btn: #e00b41;
+  --color-header-gray: #f9f9f9;
+  --color-grey-btn: #f2f2f2;
+  --color-disabled-btn: #f8f8f8;
+  --color-disabled: #e0e0e0;
 }

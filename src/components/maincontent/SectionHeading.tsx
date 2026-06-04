@@ -20,11 +20,11 @@ const SectionHeading = ({ text }: IProps) => {
       </div>
 
       <div className="flex h-fit gap-1">
-        <IconBtn padding="2">
-          <IoIosArrowBack className="size-3" />
+        <IconBtn disabled={true}>
+          <IoIosArrowBack className="size-4 m-0.5" />
         </IconBtn>
-        <IconBtn padding="2">
-          <IoIosArrowForward className="size-3" />
+        <IconBtn disabled={false}>
+          <IoIosArrowForward className="size-4 m-0.5" />
         </IconBtn>
       </div>
     </div>

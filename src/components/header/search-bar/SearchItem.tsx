@@ -6,14 +6,14 @@ interface IProps {
 
 export const SearchItem = ({ searchValue }: IProps) => {
   return (
-    <div className="mr-10 p-1">
-      <p className="text-xs  font-semibold text-gray-600">
+    <div className="mr-13 p-1.5">
+      <p className="text-xs/3  font-semibold text-gray-700">
         {searchValue.title}
       </p>
       <input
         type="text"
         placeholder={searchValue.placeholder}
-        className="font-medium"
+        className="placeholder-gray-600"
       />
     </div>
   );

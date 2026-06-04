@@ -7,20 +7,20 @@ interface IProps {
 }
 
 const Card = ({ item }: IProps) => {
-  const isFavorite = () => {
+  const guestFavorite = () => {
     if (item.favorite)
       return (
-        <div className="absolute top-3 left-3 rounded-full bg-taupe-100  pl-3 pr-3 p-0.5 text-[13px] font-bold text-zinc-600">
+        <div className="absolute top-3 left-3 rounded-full bg-taupe-100/90  pl-2.5 pr-2.5 pt-0.5 pb-1 text-[0.76em] font-bold text-zinc-600">
           Gästfavorit
         </div>
       );
     else return <></>;
   };
 
-  const showInfo = () => {
+  const roomInfo = () => {
     if (item.type === "room")
       return (
-        <p className="text-[13px]  text-zinc-500">
+        <p className="text-[0.8em]  text-zinc-500">
           {item.date} • {item.host}
         </p>
       );
@@ -36,16 +36,15 @@ const Card = ({ item }: IProps) => {
         }}
         className="rounded-3xl aspect-15/14 "
       >
-        {isFavorite()}
+        {guestFavorite()}
         <IoIosHeart className="absolute top-3 right-3 size-7 opacity-60 " />
         <IoIosHeartEmpty className="absolute top-3 right-3 size-7 text-white cursor-pointer hover:scale-110" />
       </div>
       <div className="p-1">
         <p className="text-sm font-semibold">{item.title}</p>
-        {showInfo()}
-        <p className="text-[13px]/3 text-zinc-500">
-          {item.price}
-          <span> • ★ </span>
+        {roomInfo()}
+        <p className="text-[0.8em]/3 text-zinc-500">
+          ${item.price} •<span className="text-zinc-700"> ★ </span>
           {item.rating}{" "}
         </p>
       </div>

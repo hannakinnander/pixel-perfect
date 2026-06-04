@@ -8,7 +8,7 @@ const SearchBar = () => {
       {searchValues.map((searchValue, index) => (
         <div
           key={searchValue.id}
-          className=" flex p-2 h-full pl-7 rounded-full hover:bg-zinc-200"
+          className=" flex p-2 h-full pl-7 rounded-full hover:bg-zinc-100"
         >
           <SearchItem searchValue={searchValue} />
           {index !== searchValues.length - 1 && (
@@ -17,7 +17,7 @@ const SearchBar = () => {
         </div>
       ))}
       <div
-        className="w-12 h-12 bg-rose-600 rounded-full text-center 
+        className="w-12 h-12 bg-red rounded-full text-center 
       flex items-center justify-center absolute right-2
       "
       >
