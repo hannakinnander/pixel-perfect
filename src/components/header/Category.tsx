@@ -11,7 +11,7 @@ const Category = ({ category }: IProps) => {
       return (
         <img
           src={newLogo}
-          className="absolute top-0 left-8 w-9 group-hover:scale-110"
+          className="absolute -top-0.5 left-8 w-9 group-hover:scale-110"
         ></img>
       );
     else return <></>;

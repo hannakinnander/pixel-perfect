@@ -27,7 +27,7 @@ const Card = ({ item }: IProps) => {
   };
 
   return (
-    <div className="flex-1 relative">
+    <div className="flex-1 relative cursor-pointer">
       <div
         style={{
           backgroundImage: `url(${item.img})`,

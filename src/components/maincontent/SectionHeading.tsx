@@ -8,12 +8,12 @@ interface IProps {
 }
 const SectionHeading = ({ text }: IProps) => {
   return (
-    <div className="flex justify-between w-full">
-      <div className="flex gap-2">
-        <h2 className="text-[22px] font-semibold">{text}</h2>
+    <div className="flex justify-between w-full items-center">
+      <div className="flex gap-2 items-center">
+        <h2 className="text-[1.35em] font-semibold">{text}</h2>
         <a
           href="#"
-          className="bg-zinc-100 rounded-full grid place-content-center w-8 h-8"
+          className="bg-zinc-100 rounded-full grid place-content-center w-7 h-7 hover:bg-zinc-200"
         >
           <FaArrowRight className="size-3" />
         </a>

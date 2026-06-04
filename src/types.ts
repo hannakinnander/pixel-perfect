@@ -32,5 +32,3 @@ export interface IHotel {
   img: string;
   favorite: boolean;
 }
-
-export type CategoryType = "living" | "experience" | "services";
