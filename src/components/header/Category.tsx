@@ -18,7 +18,7 @@ const Category = ({ category }: IProps) => {
   };
 
   return (
-    <div className="group relative flex items-center gap-2.5 h-13.5 mb-px cursor-pointer">
+    <div className="group relative flex items-center gap-2.5 h-13.5 mb-px cursor-pointer first:mr-1">
       <div className="h-fit">
         <img src={category.logo} className="group-hover:scale-110" />
         {isNewGategory()}

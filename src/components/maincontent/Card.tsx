@@ -10,8 +10,10 @@ const Card = ({ item }: IProps) => {
   const guestFavorite = () => {
     if (item.favorite)
       return (
-        <div className="absolute top-3 left-3 rounded-full bg-taupe-100/90  pl-3 pr-3 pt-1 pb-1 text-[0.78em] font-semibold text-neutral-800 shadow-[0px_0px_17px_2px_rgba(149,157,165,0.2)]">
-          Gästfavorit
+        <div className="absolute grid place-items-center top-3 left-3 rounded-full bg-taupe-100/90  pl-2.5 pr-2.5 pt-1 pb-1 shadow-[0px_0px_17px_2px_rgba(149,157,165,0.2)]">
+          <p className="text-[0.78em] font-bold text-neutral-600 text-shadow-[0px_0px_5px_5px_rgba(0, 0, 0, 0.7)] ">
+            Gästfavorit
+          </p>
         </div>
       );
     else return <></>;
@@ -20,7 +22,7 @@ const Card = ({ item }: IProps) => {
   const roomInfo = () => {
     if (item.type === "room")
       return (
-        <p className="text-[0.8em]/4 text-neutral-500">
+        <p className="text-[0.8em]/5 text-neutral-500 tracking-tight">
           {item.date} <span className="text-neutral-300">·</span> {item.host}
         </p>
       );
@@ -41,9 +43,9 @@ const Card = ({ item }: IProps) => {
         <IoIosHeartEmpty className="absolute top-3 right-2 w-8 h-7 text-white cursor-pointer hover:scale-110" />
       </div>
       <div className="p-1">
-        <p className="text-sm font-semibold">{item.title}</p>
+        <p className="text-[0.85em] font-semibold">{item.title}</p>
         {roomInfo()}
-        <p className="text-[0.85em]/5 text-neutral-500 text-shadow-2xs/2 ">
+        <p className="text-[0.8em]/4 text-neutral-500 text-shadow-2xs/2 ">
           {item.price} <span className="text-neutral-300"> ·</span>
           <span className="text-xs"> ★ </span>
           {item.rating}
