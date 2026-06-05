@@ -44,7 +44,7 @@ const Card = ({ item }: IProps) => {
         <p className="text-sm font-semibold">{item.title}</p>
         {roomInfo()}
         <p className="text-[0.8em]/3 text-zinc-500">
-          ${item.price} •<span className="text-zinc-700"> ★ </span>
+          {item.price} •<span className="text-zinc-700"> ★ </span>
           {item.rating}{" "}
         </p>
       </div>
