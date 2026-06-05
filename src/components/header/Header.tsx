@@ -20,7 +20,7 @@ export const Header = ({ changeCategory, currentCategory }: IProps) => {
     >
       <div className="w-full flex justify-between items-center ">
         <img src={logo} alt="logo" className="h-fit w-27 cursor-pointer mr-2" />
-        <div className="flex gap-9 ml-22 items-center">
+        <div className="flex gap-9.5 ml-22 items-center">
           {categories.map((category: ICategory, index) => (
             <div
               key={category.id}
