@@ -30,4 +30,3 @@ const Category = ({ category }: IProps) => {
 };
 
 export default Category;
-//t-auto b-auto l-auto r-auto

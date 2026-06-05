@@ -26,7 +26,7 @@ export const Header = ({ changeCategory, currentCategory }: IProps) => {
               key={category.id}
               className={
                 index === currentCategory
-                  ? "border-b-3 border-black text-black"
+                  ? "border-b-3 border-black text-neutral-700"
                   : "text-neutral-500"
               }
               onClick={() => changeCategory(index)}

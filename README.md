@@ -2,7 +2,7 @@
 
 Jag har valt att efterlikna Airbnb's hemsida med Tailwind. Jämförelsebilder finns i mappen docs.
 
-## Komma igång
+### Komma igång
 
 ```bash
 npm install
