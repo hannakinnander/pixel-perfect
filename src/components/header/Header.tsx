@@ -4,7 +4,7 @@ import type { ICategory } from "../../types";
 import Category from "./Category";
 import { IconBtn } from "../IconBtn";
 import { FiMenu } from "react-icons/fi";
-import SearchBar from "./search-bar/SearchBar";
+import SearchBar from "./searchbar/SearchBar";
 import { FiGlobe } from "react-icons/fi";
 
 interface IProps {

@@ -5,12 +5,12 @@ import { Fragment } from "react/jsx-runtime";
 
 const SearchBar = () => {
   return (
-    <div className=" group relative flex items-center bg-white w-fit shadow-xl/5 rounded-full border-[1.2px] border-neutral-200">
+    <div className=" group relative flex items-center bg-white w-fit shadow-[0px_13px_25px_-4px_rgba(0,0,0,0.1),0px_0px_2px_1px_rgba(8,11,14,0.06)] rounded-full border-[1.5px] border-neutral-200">
       {searchValues.map((searchValue, index) => (
         <Fragment key={searchValue.id}>
           <SearchItem searchValue={searchValue} />
           {index !== searchValues.length - 1 && (
-            <div className="h-8 w-0.5 bg-gray-200 self-center group-hover:collapse" />
+            <div className="h-8 w-px bg-neutral-300 self-center group-hover:collapse" />
           )}
         </Fragment>
       ))}
