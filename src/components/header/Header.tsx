@@ -14,10 +14,10 @@ interface IProps {
 
 export const Header = ({ changeCategory, currentCategory }: IProps) => {
   return (
-    <header className="w-full pl-11 pr-12 pt-5 pb-7 flex flex-col items-center gap-6 border-b-2 border-gray-200 bg-header-gray">
+    <header className="w-full pl-11 pr-12 pt-5 pb-8 flex flex-col items-center gap-6 border-b-3 border-neutral-100 bg-header-gray">
       <div className="w-full flex justify-between items-center ">
         <img src={logo} alt="logo" className="h-fit w-27 cursor-pointer" />
-        <div className="flex gap-8 ml-25">
+        <div className="flex gap-9 ml-24">
           {categories.map((category: ICategory, index) => (
             <div
               key={category.id}
@@ -32,10 +32,10 @@ export const Header = ({ changeCategory, currentCategory }: IProps) => {
             </div>
           ))}
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
           <a
             href="#"
-            className="text-[0.95em] font-semibold hover:bg-grey-btn pt-2 pb-2 pl-4 pr-4 rounded-full"
+            className="text-[0.95em] text-neutral-800 font-semibold hover:bg-grey-btn pt-2 pb-2 pl-4 pr-4 rounded-full"
           >
             Bli en värd
           </a>

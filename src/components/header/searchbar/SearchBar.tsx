@@ -5,7 +5,10 @@ import { Fragment } from "react/jsx-runtime";
 
 const SearchBar = () => {
   return (
-    <div className=" group relative flex items-center bg-white w-fit shadow-[0px_13px_25px_-4px_rgba(0,0,0,0.1),0px_0px_2px_1px_rgba(8,11,14,0.06)] rounded-full border-[1.5px] border-neutral-200">
+    <div
+      className=" group relative flex items-center bg-white 
+      shadow-[0px_13px_25px_-4px_rgba(0,0,0,0.1),0px_0px_3px_0px_rgba(8,11,14,0.06)] rounded-full border-[1.5px] border-neutral-200"
+    >
       {searchValues.map((searchValue, index) => (
         <Fragment key={searchValue.id}>
           <SearchItem searchValue={searchValue} />
@@ -26,5 +29,3 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
-
-// rounded-full border-2 border-gray-200

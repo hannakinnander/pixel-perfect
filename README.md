@@ -1,6 +1,6 @@
 # Pixel Perfect
 
-Jag har valt att efterlikna Airbnb. Jämförelsebilder finns i mappen docs.
+Jag har valt att efterlikna Airbnb's hemsida. Jämförelsebilder finns i mappen docs.
 
 ## Komma igång
 
